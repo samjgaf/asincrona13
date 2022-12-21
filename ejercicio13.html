@@ -1,0 +1,26 @@
+<!DOCTYPE html ng-app = "app">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js"></script>
+    <title>Document</title>
+</head>
+<body ng-controller = "controlador as data">
+    <article ng-controller="form">
+        <p class="title">MultiPlan</p>
+        <form >
+            Name:<br>
+            <input type="text" ng-model="userName"><br>
+            Distance Traveled:<br>
+            <input type="number" ng-model="userDistance" ><br>
+            <br><br>
+            <button ng-click="totalMonto()">Calculate</button>
+        </form>
+        <p ng-bind in montoTotal.totalMonto >{{montoTotal}}</p>
+
+    </article>
+</body>
+</html>
